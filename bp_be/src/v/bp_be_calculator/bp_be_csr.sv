@@ -600,7 +600,7 @@ module bp_be_csr
       mip_li.msip = software_irq_i;
       mip_li.meip = external_irq_i;
 
-      // Accumulate FFLAGS
+      // Accumulate FFLAGS if we're not writing them this cycle
       fcsr_li.fflags |= fflags_acc_i;
 
       // Set FS to dirty if: fflags set, frf written, fcsr written
