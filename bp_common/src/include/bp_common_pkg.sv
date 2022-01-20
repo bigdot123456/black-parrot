@@ -8,6 +8,8 @@
  *
  */
 
+  `include "bp_common_defines.svh"
+
 package bp_common_pkg;
 
   `include "bp_common_accelerator_pkgdef.svh"
